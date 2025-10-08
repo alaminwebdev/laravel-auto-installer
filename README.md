@@ -2,7 +2,7 @@
 
 A beautiful, automated installer that makes Laravel project setup as simple as clone-and-click. No more manual configuration!
 
-![Laravel Auto-Installer](screenshots/main.png)
+![Laravel Auto-Installer](screenshots/step_01.png)
 
 ## ✨ What This Solves
 
@@ -103,3 +103,15 @@ $app->handleRequest(Request::capture());
 - Node.js & npm (optional, for frontend assets)
 - MySQL/PostgreSQL/SQLite database
 - Laravel 9+ compatible
+
+
+### 📸 Screenshots
+Step 1: Requirements Check
+![Requirements Check](screenshots/step_01.png)
+
+Step 2: Database Setup
+![Database Setup](screenshots/step_02.png)
+
+Step 3: Installation Progress
+![Installation Progress](screenshots/process.png)
+
