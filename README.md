@@ -27,12 +27,12 @@ Ever cloned a Laravel project and spent 30+ minutes on setup? This installer aut
 ### For Users:
 ```bash
 # Clone any Laravel project with this installer
-git clone [project-repo]
+git clone [[project-repo]](https://github.com/alaminwebdev/laravel-auto-installer.git)
 cd [project-name]
 
 # Access the installer via browser
 # Visit: http://localhost/your-project/public/install-app.php
-
+```
 
 # Follow the step-by-step wizard
 📁 Installation Guide
