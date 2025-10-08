@@ -2,15 +2,15 @@
 
 A beautiful, automated installer that makes Laravel project setup as simple as clone-and-click. No more manual configuration!
 
-![Laravel Auto-Installer](https://via.placeholder.com/800x400/3B82F6/FFFFFF?text=Laravel+Auto-Installer+Preview)
+![Laravel Auto-Installer](screenshots/main.png)
 
 ## ✨ What This Solves
 
 Ever cloned a Laravel project and spent 30+ minutes on setup? This installer automates everything:
 
-- ✅ **System Requirements Check** - PHP, extensions, Composer, Node.js
+- 🔍 **System Requirements Check** - PHP, extensions, Composer, Node.js
 - 🗃️ **Database Setup** - Connection testing, database creation
-- 📁 **Environment Configuration** - Automatic .env file setup  
+- ⚙️ **Environment Configuration** - Automatic .env file setup  
 - 📦 **Dependency Installation** - Composer & NPM packages
 - 🔑 **Security Setup** - App key generation
 - 🗃️ **Database Migrations** - Schema setup
@@ -20,15 +20,15 @@ Ever cloned a Laravel project and spent 30+ minutes on setup? This installer aut
 ## 🚀 Quick Start
 
 ### For Project Owners:
-1. **Include** `install-app.php` in your Laravel project's public directory
-2. **Update** your `index.php` with the installation check (example below)
-3. **Users** can now clone and install with one click
+1. 📁 **Include** `install-app.php` in your Laravel project's public directory
+2. 🔧 **Update** your `index.php` with the installation check
+3. 👥 **Users** can now clone and install with one click
 
 ### For Users:
 ```bash
 # Clone any Laravel project with this installer
-git clone [[project-repo]](https://github.com/alaminwebdev/laravel-auto-installer.git)
-cd [project-name]
+git clone https://github.com/alaminwebdev/laravel-auto-installer.git
+cd project-name
 
 # Access the installer via browser
 # Visit: http://localhost/your-project/public/install-app.php
@@ -36,11 +36,11 @@ cd [project-name]
 
 # Follow the step-by-step wizard
 📁 Installation Guide
-1. Add to Existing Laravel Project
-Step 1: Place install-app.php in your public/ directory
 
-Step 2: Update your public/index.php:
-
+### Add to Existing Laravel Project
+- Step 1: Place install-app.php in your public/ directory
+- Step 2: Update your public/index.php:
+```bash
 php
 <?php
 
@@ -73,53 +73,33 @@ if (!$appInstalled) {
 require __DIR__ . '/../vendor/autoload.php';
 $app = require_once __DIR__ . '/../bootstrap/app.php';
 $app->handleRequest(Request::capture());
-2. Using with New Projects
-Simply include both files in your project repository. Users will be automatically redirected to the installer on first access.
+```
+### Using with New Projects
+- Simply include both files in your project repository. Users will be automatically redirected to the installer on first access.
 
-🛠️ Features
-Automated System Checks
-PHP version validation
+###  Features
+- Automated System Checks
+- PHP version validation
 
-Required extensions (OpenSSL, PDO, Mbstring, etc.)
+### Required extensions (OpenSSL, PDO, Mbstring, etc.)
 
-Composer availability
+- Composer availability
+- Node.js & npm detection
+- Directory permissions
+- Smart Database Setup
+- Connection testing
+- Automatic database creation
+- Environment file configuration
+- Migration execution
 
-Node.js & npm detection
+### Dependency Management
+- Composer package installation
+- NPM package installation (if package.json exists)
+- Frontend asset building
 
-Directory permissions
-
-Smart Database Setup
-Connection testing
-
-Automatic database creation
-
-Environment file configuration
-
-Migration execution
-
-Dependency Management
-Composer package installation
-
-NPM package installation (if package.json exists)
-
-Frontend asset building
-
-User Experience
-Step-by-step wizard interface
-
-Real-time progress updates
-
-Comprehensive error handling
-
-Mobile-responsive design
-
-🔧 Requirements
-PHP 8.1 or higher
-
-Composer (auto-detected)
-
-Node.js & npm (optional, for frontend assets)
-
-MySQL/PostgreSQL/SQLite database
-
-Laravel 9+ compatible
+###  Requirements
+- PHP 8.1 or higher
+- Composer (auto-detected)
+- Node.js & npm (optional, for frontend assets)
+- MySQL/PostgreSQL/SQLite database
+- Laravel 9+ compatible
