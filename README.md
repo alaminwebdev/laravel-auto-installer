@@ -2,7 +2,7 @@
 
 A beautiful, automated installer that makes Laravel project setup as simple as clone-and-click. No more manual configuration!
 
-![Laravel Auto-Installer](screenshots/step_01.png)
+![Laravel Auto-Installer](screenshots/process.png)
 
 ## ✨ What This Solves
 
@@ -107,10 +107,10 @@ $app->handleRequest(Request::capture());
 
 ### 📸 Screenshots
 Step 1: Requirements Check
-![Requirements Check](screenshots/step_01.png)
+![Requirements Check](screenshots/step_1.png)
 
 Step 2: Database Setup
-![Database Setup](screenshots/step_02.png)
+![Database Setup](screenshots/step_2.png)
 
 Step 3: Installation Progress
 ![Installation Progress](screenshots/process.png)
