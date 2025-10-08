@@ -503,7 +503,7 @@ if (isAppInstalled()) {
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+<body class="bg-gray-100 flex items-center justify-center min-h-screen py-8">
 
     <div class="bg-white shadow-lg rounded-2xl p-8 w-full max-w-xl min-h-full" id="installer-container">
         <h1 class="text-2xl font-bold text-center text-blue-600 mb-6 border-b pb-3">📦 Application Setup</h1>

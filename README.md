@@ -115,3 +115,6 @@ Step 2: Database Setup
 Step 3: Installation Progress
 ![Installation Progress](screenshots/process.png)
 
+Step 4: Installation Complete
+![Installation Complete](screenshots/step_4.png)
+
