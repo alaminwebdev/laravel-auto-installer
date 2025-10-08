@@ -420,7 +420,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['step'])) {
             'JSON' => extension_loaded('json'),
         ];
 
-        echo '<ul class="divide-y divide-gray-200 border rounded-lg overflow-hidden">';
+        echo '<ul class="divide-y divide-gray-200 border rounded-lg overflow-hidden border-gray-200">';
         foreach ($reqs as $name => $ok) {
             if (!$ok)
                 $allOk = false;
@@ -440,29 +440,29 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['step'])) {
             <h2 class="text-xl font-bold text-blue-600">Step 2: Database Setup</h2>
             <p class="text-gray-600 text-sm">Please provide your database details.</p>
             <form class="space-y-3">
-                <div class="grid grid-cols-2 gap-3 border-b pb-3">
+                <div class="grid grid-cols-2 gap-3 border-b border-gray-300 pb-3">
                     <div>
                         <label class="block text-sm font-medium text-gray-700 pb-2">Database Host</label>
-                        <input class="w-full border rounded px-3 py-2" type="text" name="db_host" value="127.0.0.1" required>
+                        <input class="w-full border rounded px-3 py-2 border-gray-300" type="text" name="db_host" value="127.0.0.1" required>
                     </div>
                     <div>
                         <label class="block text-sm font-medium text-gray-700 pb-2">Port</label>
-                        <input class="w-full border rounded px-3 py-2" type="text" name="db_port" value="3306" required>
+                        <input class="w-full border rounded px-3 py-2 border-gray-300" type="text" name="db_port" value="3306" required>
                     </div>
                 </div>
                 <div class="grid grid-cols-2 gap-3">
                     <div>
                         <label class="block text-sm font-medium text-gray-700 pb-2">Username</label>
-                        <input class="w-full border rounded px-3 py-2" type="text" name="db_user" required>
+                        <input class="w-full border rounded px-3 py-2 border-gray-300" type="text" name="db_user" required>
                     </div>
                     <div>
                         <label class="block text-sm font-medium text-gray-700 pb-2">Password</label>
-                        <input class="w-full border rounded px-3 py-2" type="password" name="db_pass" placeholder="Optional">
+                        <input class="w-full border rounded px-3 py-2 border-gray-300" type="password" name="db_pass" placeholder="Optional">
                     </div>
                 </div>
                 <div>
                     <label class="block text-sm font-medium text-gray-700 pb-2">Database Name</label>
-                    <input class="w-full border rounded px-3 py-2" type="text" name="db_name" required>
+                    <input class="w-full border rounded px-3 py-2 border-gray-300" type="text" name="db_name" required>
                 </div>
             </form>
         </div>';
@@ -500,13 +500,12 @@ if (isAppInstalled()) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>📦 Application Setup</title>
-    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="bg-gray-100 flex items-center justify-center min-h-screen py-8">
 
     <div class="bg-white shadow-lg rounded-2xl p-8 w-full max-w-xl min-h-full" id="installer-container">
-        <h1 class="text-2xl font-bold text-center text-blue-600 mb-6 border-b pb-3">📦 Application Setup</h1>
+        <h1 class="text-2xl font-bold text-center text-blue-600 mb-6 border-b pb-3 border-gray-200">📦 Application Setup</h1>
 
         <div id="step-content" class="relative">
             <!-- Loading Spinner -->
